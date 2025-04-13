@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Apuntes</title>
+    <script src="/historia_mapasmentales/js/markmap.js"></script>
+    <link rel="stylesheet" crossorigin href="/historia_mapasmentales/assets/style-B8djcpsI.css">
+  </head>
+  <body>
+    <a href="/index.html" class="back-link">Volver</a>
+    <svg id="mindmap"></svg>
+    <script>
+      var root2 = {
+        content:
+          "TEMA 2: Los inicios del Liberalismo en Espa&#xf1;a. Las Cortes de C&#xe1;diz y la Constituci&#xf3;n de 1812.",
+        children: [
+          {
+            content: "<strong>Cortes de C&#xe1;diz</strong>",
+            children: [
+              {
+                content: "<strong>Convocatoria</strong>",
+                children: [
+                  {
+                    content: "Contexto de la guerra de independencia.",
+                    children: [],
+                    payload: { tag: "li", lines: "4,5" },
+                  },
+                  {
+                    content: "Acci&#xf3;n de la Junta Central Suprema.",
+                    children: [],
+                    payload: { tag: "li", lines: "5,6" },
+                  },
+                  {
+                    content: "Consulta al pa&#xed;s y necesidad de reformas.",
+                    children: [],
+                    payload: { tag: "li", lines: "6,7" },
+                  },
+                  {
+                    content: "Dificultades en la elecci&#xf3;n de diputados.",
+                    children: [],
+                    payload: { tag: "li", lines: "7,8" },
+                  },
+                  {
+                    content:
+                      "Reuni&#xf3;n en San Fernando (Isla de Le&#xf3;n).",
+                    children: [],
+                    payload: { tag: "li", lines: "8,9" },
+                  },
+                ],
+                payload: { tag: "li", lines: "3,9" },
+              },
+              {
+                content: "<strong>Composici&#xf3;n y Principios</strong>",
+                children: [
+                  {
+                    content: "Mayor&#xed;a de diputados liberales.",
+                    children: [],
+                    payload: { tag: "li", lines: "10,11" },
+                  },
+                  {
+                    content: "Declaraci&#xf3;n de soberan&#xed;a nacional.",
+                    children: [],
+                    payload: { tag: "li", lines: "11,12" },
+                  },
+                  {
+                    content:
+                      "Establecimiento de la divisi&#xf3;n de poderes (legislativo, ejecutivo, judicial).",
+                    children: [],
+                    payload: { tag: "li", lines: "12,13" },
+                  },
+                  {
+                    content: "Reconocimiento de la igualdad ante la ley.",
+                    children: [],
+                    payload: { tag: "li", lines: "13,14" },
+                  },
+                  {
+                    content: "Reconocimiento de Fernando VII como rey.",
+                    children: [],
+                    payload: { tag: "li", lines: "14,15" },
+                  },
+                  {
+                    content: "Libertad de imprenta.",
+                    children: [],
+                    payload: { tag: "li", lines: "15,16" },
+                  },
+                ],
+                payload: { tag: "li", lines: "9,16" },
+              },
+              {
+                content: "<strong>Labor Legislativa</strong>",
+                children: [
+                  {
+                    content:
+                      "Promulgaci&#xf3;n de la Constituci&#xf3;n de 1812 (&quot;La Pepa&quot;).",
+                    children: [
+                      {
+                        content:
+                          "Extensi&#xf3;n y estructura (384 art&#xed;culos).",
+                        children: [],
+                        payload: { tag: "li", lines: "18,19" },
+                      },
+                    ],
+                    payload: { tag: "li", lines: "17,19" },
+                  },
+                  {
+                    content: "Abolici&#xf3;n del Antiguo R&#xe9;gimen",
+                    children: [
+                      {
+                        content:
+                          "Supresi&#xf3;n de los se&#xf1;or&#xed;os jurisdiccionales.",
+                        children: [],
+                        payload: { tag: "li", lines: "20,21" },
+                      },
+                      {
+                        content: "Desamortizaci&#xf3;n de tierras comunales.",
+                        children: [],
+                        payload: { tag: "li", lines: "21,22" },
+                      },
+                      {
+                        content: "Abolici&#xf3;n de la Inquisici&#xf3;n.",
+                        children: [],
+                        payload: { tag: "li", lines: "22,23" },
+                      },
+                      {
+                        content:
+                          "Libertad de contrataci&#xf3;n, anulaci&#xf3;n de gremios y unificaci&#xf3;n del mercado.",
+                        children: [],
+                        payload: { tag: "li", lines: "23,24" },
+                      },
+                    ],
+                    payload: { tag: "li", lines: "19,24" },
+                  },
+                ],
+                payload: { tag: "li", lines: "16,24" },
+              },
+              {
+                content: "<strong>Impacto y Legado</strong>",
+                children: [
+                  {
+                    content:
+                      "Escasa incidencia pr&#xe1;ctica debido a la guerra.",
+                    children: [],
+                    payload: { tag: "li", lines: "25,26" },
+                  },
+                  {
+                    content:
+                      "Retorno del absolutismo con Fernando VII y frustraci&#xf3;n de la experiencia liberal.",
+                    children: [],
+                    payload: { tag: "li", lines: "26,27" },
+                  },
+                ],
+                payload: { tag: "li", lines: "24,27" },
+              },
+            ],
+            payload: { tag: "li", lines: "2,27" },
+          },
+        ],
+        payload: { tag: "h1", lines: "0,1" },
+      };
+      const createmap = ((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create(
+          "svg#mindmap",
+          (getOptions || markmap.deriveOptions)(jsonOptions),
+          root
+        );
+      })(() => window.markmap, null, root2, null);
+    </script>
+  </body>
+</html>
