@@ -33,7 +33,7 @@ const input = htmlFiles.reduce((acc, absolutePath) => {
 }, {});
 
 export default defineConfig({
-    base: './', // Use relative paths - often works well for simple static sites
+    base: '/historia_mapasmentales/', // Use relative paths - often works well for simple static sites
     root: projectRoot,
 
     build: {
