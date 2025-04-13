@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Apuntes</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="/js/markmap.js"></script>
+  </head>
+  <body>
+    <a href="/index.html" class="back-link">Volver</a>
+    <svg id="mindmap"></svg>
+    <script>
+      var root2 = {
+        content:
+          "TEMA 7: La Guerra Civil: La evoluci&#xf3;n pol&#xed;tica en ambos bandos y las relaciones internacionales (1936-1939).",
+        children: [
+          {
+            content: "Bando Republicano",
+            children: [
+              {
+                content:
+                  '\n<p data-lines="5,6"><strong>Gobierno de Jos&#xe9; Giral (julio 1936 - septiembre 1936)</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Estallido revolucionario: Comit&#xe9;s (Consejo Soberano de Asturias, Arag&#xf3;n, etc.).",
+                    children: [],
+                    payload: { tag: "li", lines: "6,7" },
+                  },
+                  {
+                    content:
+                      "Violencia y persecuci&#xf3;n contra &quot;elementos sospechosos&quot; y la Iglesia.",
+                    children: [],
+                    payload: { tag: "li", lines: "7,8" },
+                  },
+                  {
+                    content: "Colectivizaciones de tierras y empresas.",
+                    children: [],
+                    payload: { tag: "li", lines: "8,9" },
+                  },
+                  {
+                    content: "Nuevo discurso sobre la mujer",
+                    children: [],
+                    payload: { tag: "li", lines: "9,10" },
+                  },
+                  {
+                    content: "Creaci&#xf3;n de milicias.",
+                    children: [],
+                    payload: { tag: "li", lines: "10,12" },
+                  },
+                ],
+                payload: { tag: "li", lines: "5,12" },
+              },
+              {
+                content:
+                  '\n<p data-lines="12,13"><strong>Gobierno de Francisco Largo Caballero (septiembre 1936 - mayo 1937)</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Gobierno de coalici&#xf3;n (socialistas, republicanos, comunistas, nacionalistas vascos, CNT).",
+                    children: [],
+                    payload: { tag: "li", lines: "13,14" },
+                  },
+                  {
+                    content:
+                      "Centralizaci&#xf3;n del poder y supresi&#xf3;n de juntas.",
+                    children: [],
+                    payload: { tag: "li", lines: "14,15" },
+                  },
+                  {
+                    content: "Creaci&#xf3;n del Ej&#xe9;rcito Popular.",
+                    children: [],
+                    payload: { tag: "li", lines: "15,16" },
+                  },
+                  {
+                    content: "Tribunales populares.",
+                    children: [],
+                    payload: { tag: "li", lines: "16,17" },
+                  },
+                  {
+                    content:
+                      "Tensiones internas: socialistas/comunistas vs. anarquistas/POUM.",
+                    children: [],
+                    payload: { tag: "li", lines: "17,19" },
+                  },
+                ],
+                payload: { tag: "li", lines: "12,19" },
+              },
+              {
+                content:
+                  '\n<p data-lines="19,20"><strong>Gobierno de Juan Negr&#xed;n (mayo 1937 - marzo 1939)</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Centralizaci&#xf3;n y represi&#xf3;n contra anarquistas y POUM (asesinato de Andreu Nin).",
+                    children: [],
+                    payload: { tag: "li", lines: "20,21" },
+                  },
+                  {
+                    content:
+                      "Pol&#xed;tica de resistencia (&quot;resistir es vencer&quot;).",
+                    children: [],
+                    payload: { tag: "li", lines: "21,22" },
+                  },
+                  {
+                    content:
+                      "Programa de los Trece Puntos (rechazado por Franco).",
+                    children: [],
+                    payload: { tag: "li", lines: "22,23" },
+                  },
+                  {
+                    content:
+                      "Divisiones internas: partidarios de la resistencia vs. partidarios de la negociaci&#xf3;n.",
+                    children: [],
+                    payload: { tag: "li", lines: "23,24" },
+                  },
+                  {
+                    content: "Escasez y malestar social.",
+                    children: [],
+                    payload: { tag: "li", lines: "24,25" },
+                  },
+                  {
+                    content: "Esperanza en un conflicto europeo.",
+                    children: [],
+                    payload: { tag: "li", lines: "25,26" },
+                  },
+                  {
+                    content: "Derrota en la Batalla del Ebro.",
+                    children: [],
+                    payload: { tag: "li", lines: "26,27" },
+                  },
+                  {
+                    content: "Pacto de Munich",
+                    children: [],
+                    payload: { tag: "li", lines: "27,29" },
+                  },
+                ],
+                payload: { tag: "li", lines: "19,29" },
+              },
+              {
+                content:
+                  '\n<p data-lines="29,30"><strong>Cambios Sociales</strong></p>',
+                children: [
+                  {
+                    content: "Colectivizaciones",
+                    children: [],
+                    payload: { tag: "li", lines: "30,31" },
+                  },
+                  {
+                    content: "Nuevo rol de la mujer",
+                    children: [],
+                    payload: { tag: "li", lines: "31,33" },
+                  },
+                ],
+                payload: { tag: "li", lines: "29,33" },
+              },
+            ],
+            payload: { tag: "h2", lines: "3,4" },
+          },
+          {
+            content: "Bando Nacional (Sublevado)",
+            children: [
+              {
+                content:
+                  '\n<p data-lines="35,36"><strong>Junta de Defensa Nacional y Liderazgo de Franco</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Creaci&#xf3;n de la Junta de Defensa Nacional en Burgos.",
+                    children: [],
+                    payload: { tag: "li", lines: "36,37" },
+                  },
+                  {
+                    content: "Muerte de Sanjurjo.",
+                    children: [],
+                    payload: { tag: "li", lines: "37,38" },
+                  },
+                  {
+                    content:
+                      "Franco: General&#xed;simo y Jefe del Estado (1 de octubre de 1936).",
+                    children: [],
+                    payload: { tag: "li", lines: "38,39" },
+                  },
+                  {
+                    content:
+                      "Concentraci&#xf3;n de poder: Jefe del Partido &#xda;nico (1937), Presidente del Gobierno (1938), &quot;Caudillo&quot;.",
+                    children: [],
+                    payload: { tag: "li", lines: "39,41" },
+                  },
+                ],
+                payload: { tag: "li", lines: "35,41" },
+              },
+              {
+                content:
+                  '\n<p data-lines="41,42"><strong>Represi&#xf3;n</strong></p>',
+                children: [
+                  {
+                    content: "Estado de guerra y jurisdicci&#xf3;n militar.",
+                    children: [],
+                    payload: { tag: "li", lines: "42,43" },
+                  },
+                  {
+                    content: "Violencia y asesinatos.",
+                    children: [],
+                    payload: { tag: "li", lines: "43,44" },
+                  },
+                  {
+                    content: "Campos de concentraci&#xf3;n (desde 1936).",
+                    children: [],
+                    payload: { tag: "li", lines: "44,45" },
+                  },
+                  {
+                    content: "Prisiones (aumento masivo de presos).",
+                    children: [],
+                    payload: { tag: "li", lines: "45,46" },
+                  },
+                  {
+                    content:
+                      "Violencia espec&#xed;fica contra las mujeres (violaciones, humillaciones).",
+                    children: [],
+                    payload: { tag: "li", lines: "46,48" },
+                  },
+                ],
+                payload: { tag: "li", lines: "41,48" },
+              },
+              {
+                content:
+                  '\n<p data-lines="48,49"><strong>Unificaci&#xf3;n Pol&#xed;tica</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Prohibici&#xf3;n de partidos del Frente Popular y sindicatos.",
+                    children: [],
+                    payload: { tag: "li", lines: "49,50" },
+                  },
+                  {
+                    content:
+                      "Decreto de Unificaci&#xf3;n (19 de abril de 1937): Falange Espa&#xf1;ola Tradicionalista y de las JONS (partido &#xfa;nico).",
+                    children: [],
+                    payload: { tag: "li", lines: "50,51" },
+                  },
+                  {
+                    content: "Movimiento Nacional.",
+                    children: [],
+                    payload: { tag: "li", lines: "51,53" },
+                  },
+                ],
+                payload: { tag: "li", lines: "48,53" },
+              },
+              {
+                content:
+                  '\n<p data-lines="53,54"><strong>Construcci&#xf3;n del Estado</strong></p>',
+                children: [
+                  {
+                    content: "Gobierno de Burgos (enero de 1938).",
+                    children: [],
+                    payload: { tag: "li", lines: "54,55" },
+                  },
+                  {
+                    content: "Leyes represivas:",
+                    children: [
+                      {
+                        content: "Ley de Prensa (censura).",
+                        children: [],
+                        payload: { tag: "li", lines: "56,57" },
+                      },
+                      {
+                        content:
+                          "Ley de Depuraci&#xf3;n de Funcionarios P&#xfa;blicos.",
+                        children: [],
+                        payload: { tag: "li", lines: "57,58" },
+                      },
+                      {
+                        content: "Ley de Responsabilidades Pol&#xed;ticas.",
+                        children: [],
+                        payload: { tag: "li", lines: "58,59" },
+                      },
+                    ],
+                    payload: { tag: "li", lines: "55,59" },
+                  },
+                  {
+                    content:
+                      "Fuero del Trabajo (marzo de 1938): sindicato &#xfa;nico corporativo.",
+                    children: [],
+                    payload: { tag: "li", lines: "59,61" },
+                  },
+                ],
+                payload: { tag: "li", lines: "53,61" },
+              },
+              {
+                content:
+                  '\n<p data-lines="61,62"><strong>Ideolog&#xed;a</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Fin de la descentralizaci&#xf3;n y los estatutos de autonom&#xed;a.",
+                    children: [],
+                    payload: { tag: "li", lines: "62,63" },
+                  },
+                  {
+                    content:
+                      "&quot;Cruzada&quot;: apoyo de la Iglesia, visi&#xf3;n religiosa de la guerra.",
+                    children: [],
+                    payload: { tag: "li", lines: "63,64" },
+                  },
+                  {
+                    content: "Nacionalcatolicismo",
+                    children: [],
+                    payload: { tag: "li", lines: "64,66" },
+                  },
+                ],
+                payload: { tag: "li", lines: "61,66" },
+              },
+            ],
+            payload: { tag: "h2", lines: "33,34" },
+          },
+          {
+            content: "Contexto Internacional",
+            children: [
+              {
+                content:
+                  '\n<p data-lines="68,69"><strong>Pol&#xed;tica de No Intervenci&#xf3;n</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Acuerdo de No Intervenci&#xf3;n (agosto de 1936).",
+                    children: [],
+                    payload: { tag: "li", lines: "69,70" },
+                  },
+                  {
+                    content:
+                      "Comit&#xe9; de No Intervenci&#xf3;n (Londres, 9 de septiembre).",
+                    children: [],
+                    payload: { tag: "li", lines: "70,71" },
+                  },
+                  {
+                    content:
+                      "Incumplimiento por parte de Alemania, Italia y Portugal.",
+                    children: [],
+                    payload: { tag: "li", lines: "71,73" },
+                  },
+                ],
+                payload: { tag: "li", lines: "68,73" },
+              },
+              {
+                content:
+                  '\n<p data-lines="73,74"><strong>Apoyo Fascista</strong></p>',
+                children: [
+                  {
+                    content: "Alemania e Italia: apoyo a Franco.",
+                    children: [],
+                    payload: { tag: "li", lines: "74,76" },
+                  },
+                ],
+                payload: { tag: "li", lines: "73,76" },
+              },
+              {
+                content:
+                  '\n<p data-lines="76,77"><strong>Apoyo a la Rep&#xfa;blica</strong></p>',
+                children: [
+                  {
+                    content: "URSS: env&#xed;o de armas.",
+                    children: [],
+                    payload: { tag: "li", lines: "77,78" },
+                  },
+                  {
+                    content: "Brigadas Internacionales.",
+                    children: [],
+                    payload: { tag: "li", lines: "78,79" },
+                  },
+                ],
+                payload: { tag: "li", lines: "76,79" },
+              },
+              {
+                content:
+                  '\n<p data-lines="79,80"><strong>Postura de Churchill</strong></p>',
+                children: [
+                  {
+                    content:
+                      "Apoyo inicial al bando sublevado<br>\n*Antipat&#xed;a a los republicanos",
+                    children: [],
+                    payload: { tag: "li", lines: "80,82" },
+                  },
+                ],
+                payload: { tag: "li", lines: "79,82" },
+              },
+            ],
+            payload: { tag: "h2", lines: "66,67" },
+          },
+        ],
+        payload: { tag: "h1", lines: "0,1" },
+      };
+      const createmap = ((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create(
+          "svg#mindmap",
+          (getOptions || markmap.deriveOptions)(jsonOptions),
+          root
+        );
+      })(() => window.markmap, null, root2, null);
+    </script>
+  </body>
+</html>
