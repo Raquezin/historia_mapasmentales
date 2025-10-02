@@ -8,7 +8,7 @@ Los apuntes están diseñados para visualizarse como mapas mentales interactivos
 
 ## Licencias
 
-- **Apuntes**: Puedes usar y compartir libremente el contenido con fines educativos.
+- **Apuntes**: Puedes usar y compartir libremente el contenido con fines educativos. Bajo la [licencia MIT](LICENSE)
 - **Markmap**: Esta herramienta se distribuye bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
 
 > [!NOTE]  
