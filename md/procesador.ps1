@@ -6,6 +6,8 @@ Get-ChildItem -Path $markdownDir -Filter "*.md" -File | ForEach-Object {
     }
     $pdfFile = Join-Path $pdfDir ($_.BaseName + ".pdf")
     Write-Output "Procesando: $($_.FullName)"
-    pandoc $($_.FullName) --from=gfm -o $pdfFile -V geometry:margin=0.7in
+    pandoc $($_.FullName) --from=gfm -o $pdfFile -V geometry:margin=0.7in \
+    --metadata title="Apuntes de historia" --metadata author="Fernando Giráldez" \
+    --metadata date="$(date +'%d/%m/%Y')"
     Write-Output "Generado: $pdfFile"
 }
